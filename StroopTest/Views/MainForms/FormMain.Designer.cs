@@ -59,6 +59,9 @@
             this.deleteDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displayDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stroopToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.reactionToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.experimentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displayAudiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.instructionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -92,9 +95,6 @@
             this.selectButton = new System.Windows.Forms.Button();
             this.executingTypeLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.stroopToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.reactionToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.experimentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenuStrip.SuspendLayout();
             this.testToolStrip.SuspendLayout();
             this.markPanel.SuspendLayout();
@@ -192,14 +192,14 @@
             // stroopToolStripMenuItem
             // 
             this.stroopToolStripMenuItem.Name = "stroopToolStripMenuItem";
-            this.stroopToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.stroopToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
             this.stroopToolStripMenuItem.Text = "Stroop";
             this.stroopToolStripMenuItem.Click += new System.EventHandler(this.stroopToolStripMenuItem_Click);
             // 
             // reactionToolStripMenuItem
             // 
             this.reactionToolStripMenuItem.Name = "reactionToolStripMenuItem";
-            this.reactionToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.reactionToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
             this.reactionToolStripMenuItem.Text = "Reaction";
             this.reactionToolStripMenuItem.Click += new System.EventHandler(this.reactionToolStripMenuItem_Click);
             // 
@@ -344,13 +344,34 @@
             this.reactionToolStripMenuItem2,
             this.experimentoToolStripMenuItem});
             this.displayDataToolStripMenuItem.Name = "displayDataToolStripMenuItem";
-            this.displayDataToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.displayDataToolStripMenuItem.Size = new System.Drawing.Size(130, 26);
             this.displayDataToolStripMenuItem.Text = "Dados";
+            // 
+            // stroopToolStripMenuItem2
+            // 
+            this.stroopToolStripMenuItem2.Name = "stroopToolStripMenuItem2";
+            this.stroopToolStripMenuItem2.Size = new System.Drawing.Size(168, 26);
+            this.stroopToolStripMenuItem2.Text = "Stroop";
+            this.stroopToolStripMenuItem2.Click += new System.EventHandler(this.dataToolStripMenuItem_Click);
+            // 
+            // reactionToolStripMenuItem2
+            // 
+            this.reactionToolStripMenuItem2.Name = "reactionToolStripMenuItem2";
+            this.reactionToolStripMenuItem2.Size = new System.Drawing.Size(168, 26);
+            this.reactionToolStripMenuItem2.Text = "Reaction";
+            this.reactionToolStripMenuItem2.Click += new System.EventHandler(this.reactionToolStripMenuItem2_Click);
+            // 
+            // experimentoToolStripMenuItem
+            // 
+            this.experimentoToolStripMenuItem.Name = "experimentoToolStripMenuItem";
+            this.experimentoToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
+            this.experimentoToolStripMenuItem.Text = "Experimento";
+            this.experimentoToolStripMenuItem.Click += new System.EventHandler(this.experimentoToolStripMenuItem_Click);
             // 
             // displayAudiosToolStripMenuItem
             // 
             this.displayAudiosToolStripMenuItem.Name = "displayAudiosToolStripMenuItem";
-            this.displayAudiosToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.displayAudiosToolStripMenuItem.Size = new System.Drawing.Size(130, 26);
             this.displayAudiosToolStripMenuItem.Text = "Áudios";
             this.displayAudiosToolStripMenuItem.Click += new System.EventHandler(this.displayAudiosToolStripMenuItem_Click);
             // 
@@ -776,27 +797,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(968, 40);
             this.tableLayoutPanel2.TabIndex = 29;
-            // 
-            // stroopToolStripMenuItem2
-            // 
-            this.stroopToolStripMenuItem2.Name = "stroopToolStripMenuItem2";
-            this.stroopToolStripMenuItem2.Size = new System.Drawing.Size(181, 26);
-            this.stroopToolStripMenuItem2.Text = "Stroop";
-            this.stroopToolStripMenuItem2.Click += new System.EventHandler(this.dataToolStripMenuItem_Click);
-            // 
-            // reactionToolStripMenuItem2
-            // 
-            this.reactionToolStripMenuItem2.Name = "reactionToolStripMenuItem2";
-            this.reactionToolStripMenuItem2.Size = new System.Drawing.Size(181, 26);
-            this.reactionToolStripMenuItem2.Text = "Reaction";
-            this.reactionToolStripMenuItem2.Click += new System.EventHandler(this.reactionToolStripMenuItem2_Click);
-            // 
-            // experimentoToolStripMenuItem
-            // 
-            this.experimentoToolStripMenuItem.Name = "experimentoToolStripMenuItem";
-            this.experimentoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.experimentoToolStripMenuItem.Text = "Experimento";
-            this.experimentoToolStripMenuItem.Click += new System.EventHandler(this.experimentoToolStripMenuItem_Click);
             // 
             // FormMain
             // 

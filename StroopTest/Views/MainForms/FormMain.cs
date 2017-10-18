@@ -14,6 +14,10 @@ using System.Collections.Generic;
 using TestPlatform.Controllers;
 using TestPlatform.Views.ReactionPages;
 using TestPlatform.Views.ExperimentPages;
+using System.Linq;
+
+using LinqToDB.DataProvider.SqlServer;
+using LinqToDB;
 
 namespace TestPlatform
 {
@@ -40,9 +44,32 @@ namespace TestPlatform
          * */
         public FormMain()
         {
+            const string ConnectionString =
+            "Data Source=.;Database=test;";
+            using (var db = SqlServerTools.CreateDataConnection(ConnectionString))
+            {
+                var sp = db.DataProvider.GetSchemaProvider();
+                var dbSchema = sp.GetSchema(db);
+                if (!dbSchema.Tables.Any(t => t.TableName == "StroopProgram"))
+                {
+                    //no required table-create it
+                    db.CreateTable<StroopProgram>();
+                }
+            }
+            using (var db = new DatabaseModel())
+            {
+                var q =
+                    from c in db.Customers
+                    select c;
+
+                foreach (var c in q)
+                    Console.WriteLine(c.ContactName);
+            }
+
             /* Creating main folder for application*/
             Global.defaultPath = (Path.GetDirectoryName(Application.ExecutablePath)); //saving on variable current executing path
             Global.testFilesPath = Global.defaultPath + Global.testFilesPath;
+
             if (!Directory.Exists(Global.testFilesPath))
             {
                 Directory.CreateDirectory(Global.testFilesPath);
